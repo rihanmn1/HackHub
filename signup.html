@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sign Up page</title>
+
+
+	<link rel="stylesheet" href="./css/signup.css" />
+	<link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+	
+
+</head>
+
+<body>
+	<div id="navbar"></div>
+
+	<div id="container">
+
+		<div id="left_div">
+			
+			
+		</div>
+
+
+		<div id="right_div">
+			<h2>
+				Food Lover? Sign Up Now!
+			</h2>
+			<br />
+			
+			<br />
+			<br />
+			<div id="forName">
+				<h3 style="margin-top: 20px;">Your Name</h3>
+				<div>
+					<div>
+						<p>First Name</p>
+						<input type="text" id="firstName" required="true" />
+					</div>
+					<div>
+						<p>Last Name</p>
+						<input type="text" />
+					</div>
+				</div>
+			</div>
+
+			<div id="forEmail">
+				<h3 style="margin-top: 20px;">Email</h3>
+				<div>
+					<p>Your email must be correct to receive activation email</p>
+					<input type="email" id="SignUpemail" required />
+				</div>
+			</div>
+
+			<div id="forReEnterEmail">
+				<h3>Re-Enter Email:</h3>
+				<div style="margin-top: 2px">
+					<input type="email" />
+				</div>
+			</div>
+
+			<div id="forPassword">
+				<h3>Password</h3>
+				<div>
+					<input type="password" id="SignUppass" required />
+				</div>
+			</div>
+
+			<div id="forUsername">
+				<h3 style="margin-top: 20px;">Username</h3>
+				<div style="margin-top: -28px;">
+					<p>Choose a cool username for your Personal Profile page, comments & reviews</p>
+					<p style="color: #2bb673;">HackHub Team</p>
+					<input type="text" />
+				</div>
+			</div>
+
+			<div id="forBirthDate">
+				<h3 style="margin-top: 20px;">Birth Date</h3>
+				<div>
+					<p>Only your age will be publicly visible</p>
+					<input type="date" />
+				</div>
+			</div>
+
+			<!-- <div id="forCountry">
+				<p>Country</p>
+				<div>
+					<select name="countries" id="countries">
+						<option value="yourCountry">Your Country</option>
+						<option value="Malaysia">Malaysia</option>
+						<option value="Maldives">Maldives</option>
+						<option value="Mali">Mali</option>
+						<option value="Malta">Malta</option>
+						<option value="Hong Kong">Hong Kong</option>
+						<option value="Hungary">Hungary</option>
+						<option value="Iceland">Iceland</option>
+						<option value="India">India</option>
+						<option value="Indonesia">Indonesia</option>
+					</select>
+				</div>
+			</div> -->
+
+			<!-- <div id="forState">
+				<p>Select State</p>
+				<div>
+					<select name="states" id="states">
+
+						<option value="selectState">Select State</option>
+						<option value="Johor">Johor</option>
+						<option value="Kedah">Kedah</option>
+						<option value="Kelantan">Kelantan</option>
+						<option value="Kuala Lumpur">Kuala Lumpur</option>
+						<option value="Labuan">Labuan</option>
+						<option value="Malacca">Malacca</option>
+						<option value="Negeri Sembilan">Negeri Sembilan</option>
+						<option value="Pahang">Pahang</option>
+						<option value="Perak">Perak</option>
+						<option value="Perlis">Perlis</option>
+						<option value="Penang">Penang</option>
+					</select>
+				</div>
+			</div> -->
+
+			<div id="forGender">
+				<h3>Gender</h3>
+				<div style="margin-top: 10px">
+					<input type="checkbox" name="male" value="male" />
+					<label for="male">Male</label>
+					<input type="checkbox" name="female" value="female" />
+					<label for="male">Female</label>
+				</div>
+			</div>
+
+			<!-- <div id="forProfilePhoto">
+				<p>Profile Photo</p>
+				<div style="margin-top: 2px">
+					<button style="padding: 8px; border-radius: 10px; cursor: pointer">Select Photo</button>
+				</div>
+			</div> -->
+
+			<!-- <input type="checkbox" name="termsNConditions" id="termsNConditions" />
+			<label for="termsNConditions">I agree to KindMeal.my's Terms & Conditions</label> -->
+
+
+			<button id="signUpButton">Join Now</button>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+
+</html>
+
+<script src="js/signup.js" type="module"></script>

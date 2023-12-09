@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/calorie.css">
+  <title>Calorie Calculator</title>
+</head>
+<body>
+
+  <div class="box">
+  <h1>Calorie Calculator</h1>
+    
+  <!-- <div class="form-group">
+    <label for="food-select">Select Food:</label>
+    <select id="food-select">
+      <option value="300">Steak</option>
+      <option value="400">Lasagna</option>
+      <option value="400">Chicken Burger</option>
+      <option value="300">Fried Chicken</option>
+      <option value="450">Chicken Sandwich</option>
+      <option value="200">Hotdog</option>
+      <option value="400">Chicken Wraps</option>
+      <option value="400">Chicken Noodles</option>
+
+    </select>
+  </div>
+
+  <div class="form-group2">
+    <label for="servings">Number of Servings:</label>
+    <input type="number" id="servings" placeholder="Enter number of servings" required>
+  </div>
+
+  <button onclick="calculateCalories()">Calculate Total Calories</button>
+
+  <div id="result"></div>
+  </div>
+
+  <script src="./js/calorie.js"></script> -->
+
+  <ul id="foodList">
+    <!-- Initial set of food options -->
+    <li class="food-item" data-calories="300">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Steak
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li>
+    <li class="food-item" data-calories="400">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Lasagna
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li><li class="food-item" data-calories="400">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Chicken Burger
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li><li class="food-item" data-calories="300">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Fried Chicken
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li><li class="food-item" data-calories="450">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Chicken Sandwich
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li><li class="food-item" data-calories="200">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Hotdog
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li><li class="food-item" data-calories="400">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Chicken Wraps
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li><li class="food-item" data-calories="400">
+      <button class="sub-btn" onclick="decreaseQuantity(this)">-</button>
+      Chicken Noodles
+      <span class="quantity">0</span>
+      <button class="add-btn" onclick="increaseQuantity(this)">+</button>
+    </li>
+    <!-- Add more items as needed -->
+  </ul>
+
+  <button onclick="calculateCalories()">Calculate Total Calories</button>
+
+  <div id="result"></div>
+
+  <script src="./js/calorie.js"></script>
+</body>
+</html>
